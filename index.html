@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>Foodies Restuarant</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order Now</a>
+        </nav>
+    </header>
+
+    <!--section1-->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Burger</h3>
+                <P>$5.00</P>
+            </div>
+            <div class="item">
+                <h3>Pizza</h3>
+                <p>$39.00</p>
+            </div>
+            <div class="item">
+                <h3>Fried Rice</h3>
+                <p>$83.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!--section2-->
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <select id="foodItem" required>
+                <option value="Pizza">Pizza</option>
+                <option value="Fried Rice">Fried Rice</option>
+            </select>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <button type="submit">Submit Order</button>
+        </form>
+        <div id="orderResult"></div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <p>&copy,2025 Foodies Restuarant</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
